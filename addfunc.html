@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Segurança das Indústrias Wayne</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="nav-buttons">
+        <button onclick="navigateTo('addrecursos.html')">Gestão de Recursos</button>
+        <button onclick="navigateTo('controle.html')">Controle de Acesso</button>
+        <button id="sair">Sair</button>
+        
+    </div>
+    
+    <div class="container">
+        <h1>Gestão de Segurança das Indústrias Wayne</h1>
+        <form id="formRegistro">
+            <label for="nome">Nome do Funcionário:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" name="departamento" required>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <h2>Registros</h2>
+        <table id="tabelaRegistros">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Departamento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

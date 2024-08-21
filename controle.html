@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso - Indústrias Wayne</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="nav-buttons">
+        <button onclick="navigateTo('addrecursos.html')">Gestão de Recursos</button>
+        <button onclick="navigateTo('controle.html')">Controle de Acesso</button>
+        <button onclick="navigateTo('login.html')">Sair</button>
+    </div>
+    
+    <div class="container">
+        <h1>Controle de Acesso</h1>
+        <form id="formAddAdmin">
+            <label for="adminNome">Nome do Administrador:</label>
+            <input type="text" id="adminNome" name="adminNome" required>
+            <label for="adminEmail">Email:</label>
+            <input type="email" id="adminEmail" name="adminEmail" required>
+            <label for="adminSenha">Senha:</label>
+            <input type="password" id="adminSenha" name="adminSenha" required>
+            <button type="submit">Adicionar Administrador</button>
+        </form>
+
+        <h2>Administradores Registrados</h2>
+        <div id="adminCards" class="admin-cards">
+            <!-- Cartões de administradores serão inseridos aqui -->
+        </div>
+    </div>
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+    <script src="controle.js"></script>
+</body>
+</html>

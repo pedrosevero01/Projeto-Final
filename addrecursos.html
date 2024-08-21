@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Recursos das Indústrias Wayne</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="nav-buttons">
+        <button onclick="navigateTo('addfunc.html')">Adicionar funcionários</button>
+        <button onclick="navigateTo('controle.html')">Controle de Acesso</button>
+        <button id="sair">Sair</button>
+    </div>
+    
+    <div class="container">
+        <h1>Gestão de Recursos das Indústrias Wayne</h1>
+        
+        <div class="resource-forms">
+            <div class="form-card">
+                <h2>Adicionar Veículo</h2>
+                <form id="formVeiculo">
+                    <label for="nomeVeiculo">Nome:</label>
+                    <input type="text" id="nomeVeiculo" name="nomeVeiculo">
+                    <label for="modeloVeiculo">Modelo:</label>
+                    <input type="text" id="modeloVeiculo" name="modeloVeiculo" required>
+                    <label for="anoVeiculo">Ano:</label>
+                    <input type="number" id="anoVeiculo" name="anoVeiculo" required>
+                    <button type="submit">Adicionar Veículo</button>
+                </form>
+            </div>
+
+            <div class="form-card">
+                <h2>Adicionar Item de Segurança</h2>
+                <form id="formItemSeguranca">
+                    <label for="nomeItem">Nome:</label>
+                    <input type="text" id="nomeItem" name="nomeItem" required>
+                    <label for="descricaoItem">Descrição:</label>
+                    <input type="text" id="descricaoItem" name="descricaoItem">
+                    <label for="quantidadeItem">Quantidade:</label>
+                    <input type="number" id="quantidadeItem" name="quantidadeItem" required>
+                    <button type="submit">Adicionar Item</button>
+                </form>
+            </div>
+        </div>
+        
+        <h2>Recursos</h2>
+        <div class="resource-tables">
+            <div class="table-card">
+                <h3>Veículos</h3>
+                <table id="tabelaVeiculos">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Veículos serão listados aqui -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-card">
+                <h3>Itens de Segurança</h3>
+                <table id="tabelaItensSeguranca">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Itens de segurança serão listados aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
